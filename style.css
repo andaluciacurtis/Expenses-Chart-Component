@@ -25,15 +25,21 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 hr {
   border: 1px solid var(--medium-brown);
+  margin: 10px 0;
 }
 
 .outer-container {
@@ -61,6 +67,7 @@ main {
   background-color: var(--soft-red);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .balance-container h1, .balance-container h2 {
@@ -75,13 +82,28 @@ main {
   color: var(--medium-brown);
 }
 
-.chart {
+.chart-labels, .chart {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.bar {
+  height: 30px;
+  width: 30px;
+  background-color: var(--cyan);
+  border-radius: 5px;
+}
+
+.bar-container p {
+  text-align: center;
+}
+
 .summary-container {
   display: flex;
   justify-content: space-between;
+}
+
+.summary-container div:nth-child(2) {
+  text-align: right;
 }
