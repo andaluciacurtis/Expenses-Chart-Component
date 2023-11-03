@@ -20,21 +20,25 @@ html, body {
 
 h1 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
+  margin: 5px 0;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 13px;
+  margin: 5px 0;
 }
 
 p {
-  font-size: 14px;
+  font-size: 13px;
+  margin: 5px 0;
 }
 
 hr {
@@ -70,7 +74,7 @@ main {
   align-items: center;
 }
 
-.balance-container h1, .balance-container h2 {
+.balance-container h2, .balance-container p {
   color: var(--very-pale-orange);
 }
 
@@ -78,14 +82,17 @@ main {
   background-color: var(--very-pale-orange);
 }
 
-.spending-container h2, .spending-container p {
+.spending-container p {
   color: var(--medium-brown);
 }
 
-.chart-labels, .chart {
+.chart {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .bar {
@@ -102,6 +109,8 @@ main {
 .summary-container {
   display: flex;
   justify-content: space-between;
+  align-items:flex-end;
+  margin-top: 15px;
 }
 
 .summary-container div:nth-child(2) {
