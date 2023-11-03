@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+p {
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid var(--medium-brown);
+}
+
+.outer-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cream);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.balance-container, .spending-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.balance-container {
+  background-color: var(--soft-red);
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-container h1, .balance-container h2 {
+  color: var(--very-pale-orange);
+}
+
+.spending-container {
+  background-color: var(--very-pale-orange);
+}
+
+.spending-container h2, .spending-container p {
+  color: var(--medium-brown);
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+}
