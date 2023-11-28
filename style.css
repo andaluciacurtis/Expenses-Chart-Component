@@ -88,26 +88,40 @@ main {
 
 .chart {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 30px;
   margin-bottom: 15px;
 }
 
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-bar {
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.hover-bar p {
+  color: var(--very-pale-orange);
+  font-weight: bold;
+}
+
 .bar {
-  height: 30px;
-  width: 30px;
+  width: 40px;
   background-color: var(--soft-red);
   border-radius: 5px;
 }
 
 .highest-bar {
   background-color: var(--cyan);
-}
-
-.bar-container p {
-  text-align: center;
 }
 
 .summary-container {
