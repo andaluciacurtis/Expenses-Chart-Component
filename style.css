@@ -42,7 +42,7 @@ p {
 }
 
 hr {
-  border: 1px solid var(--medium-brown);
+  border: 1px solid var(--cream);
   margin: 10px 0;
 }
 
@@ -98,8 +98,12 @@ main {
 .bar {
   height: 30px;
   width: 30px;
-  background-color: var(--cyan);
+  background-color: var(--soft-red);
   border-radius: 5px;
+}
+
+.highest-bar {
+  background-color: var(--cyan);
 }
 
 .bar-container p {
