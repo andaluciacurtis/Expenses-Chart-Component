@@ -1,19 +1,31 @@
-import file from "./data.json" assert { type: 'json'};
+const response = await fetch('./data.json');
+const data = await response.json();
 
-const barContainers = document.querySelectorAll(".bar-container");
-
+const chart = document.querySelector(".chart");
 const balance = document.querySelector(".balance");
-const total = document.querySelector(".total");
+const totalAmount = document.querySelector(".total");
 const increase = document.querySelector(".increase");
 
+calculateData();
+
 function calculateData() {
-  let total = 0;
-  let highestDay = 0;
+  let totalSpendings = 0;
+  let highestDay = data[0];
 
-    // get data from json file
+  data.forEach((currentDay)=> {
+    let amount = currentDay.amount;
+    let day = currentDay.day;
 
+    totalSpendings += amount;
+    if (amount > highestDay.amount) {
+      highestDay = currentDay;
+    }
+
+    let newBar = ``
+    
+    chart.insertAdjacentHTML("beforeend", newBar);
+    
+  })
   
-    // add total all together
-    // show the increase from last month
-    // show the highest day
+  totalAmount.innerHTML = `$${totalSpendings}`;
 }
