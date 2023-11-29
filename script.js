@@ -36,8 +36,17 @@ function calculateData() {
       highestDay = currentDay;
       highestBar = bar;
     }
-    
+
     chart.appendChild(barContainer);
+    bar.addEventListener("mouseover", ()=>{
+      bar.classList.add("hover");
+      hoverBar.classList.add("visible");
+    });
+
+    bar.addEventListener("mouseleave", ()=>{
+      bar.classList.remove("hover");
+      hoverBar.classList.remove("visible");
+    });
   })
 
   highestBar.classList.add("highest-bar");

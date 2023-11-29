@@ -92,6 +92,7 @@ main {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .bar-container {
@@ -107,6 +108,7 @@ main {
   border-radius: 5px;
 
   text-align: center;
+  visibility: hidden;
 }
 
 .hover-bar p {
@@ -133,4 +135,12 @@ main {
 
 .summary-container div:nth-child(2) {
   text-align: right;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hover {
+  opacity: 30%;
 }
